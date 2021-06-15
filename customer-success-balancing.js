@@ -10,7 +10,7 @@ function customerSuccessWithMinimumAcceptableScore(minimumAcceptableScore) {
   };
 }
 
-function getMinimumScoreFromCustomer(customers) {
+function getMinimumScoreFromCustomers(customers) {
   return customers.reduce((acc, curr) => (acc.score < curr.score ? acc : curr)).score;
 }
 
@@ -21,9 +21,9 @@ function getMinimumScoreFromCustomer(customers) {
  * @param {array} customerSuccessAway
  */
 function customerSuccessBalancing(customerSuccess, customers, customerSuccessAway) {
-  const minimumScoreFromCustomer = getMinimumScoreFromCustomer(customers);
+  const minimumScoreFromCustomers = getMinimumScoreFromCustomers(customers);
   const css = customerSuccess
-    .filter(customerSuccessWithMinimumAcceptableScore(minimumScoreFromCustomer))
+    .filter(customerSuccessWithMinimumAcceptableScore(minimumScoreFromCustomers))
     .filter(customerSuccessIsNotAway(customerSuccessAway))
     .sort((cssA, cssB) => cssA.score - cssB.score);
 
