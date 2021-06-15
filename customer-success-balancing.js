@@ -11,7 +11,7 @@ function customerSuccessWithMinimumAcceptableScore(minimumAcceptableScore) {
 }
 
 function getMinimumScoreFromCustomers(customers) {
-  return customers.reduce((acc, curr) => (acc.score < curr.score ? acc : curr)).score;
+  return customers.reduce((acc, curr) => (acc.score < curr.score ? acc : curr), {}).score;
 }
 
 /**
