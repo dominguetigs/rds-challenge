@@ -1,5 +1,17 @@
-# CustomerSuccess Balancing
+<h1 align="center">
+    <b>Customer Success Balancing</b>
+</h1>
 
+<p align="center">
+  <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pre-requisitos">Pré-requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+<a id="sobre"></a>
+
+## :bookmark: Sobre
 
 Este desafio consiste em um sistema de balanceamento entre clientes e Customer Success (CSs). Os CSs são os Gerentes de Sucesso, são responsáveis pelo acompanhamento estratégico dos clientes.
 
@@ -18,7 +30,6 @@ Se temos 6 clientes com os seguintes níveis: 20, 30, 35, 40, 60, 80 e dois CSs 
 
 Sendo `n` o número de CSs, `m` o númro de clientes e `t` o número de abstenções de CSs, calcular quais clientes serão atendidos por quais CSs de acordo com as regras apresentadas.
 
-
 ### Premissas
 
 - Todos os CSs têm níveis diferentes
@@ -33,7 +44,7 @@ Sendo `n` o número de CSs, `m` o númro de clientes e `t` o número de abstenç
 - 0 < tamanho do cliente < 100.000
 - Valor máximo de t = n/2 arredondado para baixo
 
-## Input
+### Input
 
 A função `customerSuccessBalancing()` recebe 3 parâmetros:
 
@@ -41,8 +52,7 @@ A função `customerSuccessBalancing()` recebe 3 parâmetros:
 - id e nivel de experiência dos Clientes
 - ids dos CustomerSuccess indisponíveis
 
-
-## Output
+### Output
 
 O resultado esperado deve ser o id do CS que atende mais clientes. Com esse valor a empresa poderá fazer um plano de ação para contratar mais CS's de um nível aproximado.
 
@@ -58,20 +68,48 @@ Para este exemplo o retorno deve ser `1`, que é o id do CS que atende 4 cliente
 1
 ```
 
-## Como rodar os testes
+<a id="tecnologias-utilizadas"></a>
 
-No terminal, execute os comandos:
+## :rocket: Tecnologias Utilizadas
+
+Foram também utilizadas as seguintes tecnologias
+
+- [Node](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/)
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Jest](https://jestjs.io/pt-BR/)
+
+<a id="pre-requisitos"></a>
+
+## :fire: Pré-requisitos
+
+É preciso ter o node instalado e o npm para poder instalar as dependências do repositório e poder rodar os scripts do **package.json**.
+
+<a id="como-usar"></a>
+
+## :zap: Como usar
 
 ```bash
-cd javascript
-yarn
-yarn test
+  # Clone o repositório
+  $ git clone git@github.com:dominguetigs/rds-challenge
+
+  # Acesse a pasta raiz do repositório
+  $ cd rds-challenge
+
+  # Instale as dependências
+  $ npm install
+
+  # Inicie o servidor Phoenix
+  $ npm run test
 ```
 
-Ou usando o NPM:
+<a id="extras"></a>
 
-```bash
-cd javascript
-npm install
-npm test
-```
+---
+
+<h4 align="center">
+    Feito com 💙 by <a
+      href="https://www.linkedin.com/in/gustavodomingueti/"
+      target="_blank"
+    >Gustavo Domingueti</a>
+</h4>
