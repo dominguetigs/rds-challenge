@@ -55,7 +55,7 @@ test('Scenario 3', () => {
   const customers = buildSizeEntities(10000, 998);
   const csAway = [999];
 
-  expect(customerSuccessBalancing(css, customers, csAway)).toEqual(999);
+  expect(customerSuccessBalancing(css, customers, csAway)).toEqual(998);
 
   if (new Date().getTime() - testStartTime > testTimeoutInMs) {
     throw new Error(`Test took longer than ${testTimeoutInMs}ms!`);
