@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "main": "customer-success-balancing.js",
   "private": false,
-  "publishConfig": {
-    "registry": "http://nexus3.preventsenior.com.br/repository/npm-internal/"
-  },
   "scripts": {
     "test": "jest"
   },
